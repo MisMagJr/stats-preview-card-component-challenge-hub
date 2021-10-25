@@ -104,3 +104,41 @@ p {
   text-align: center;
   color: white;
 }
+
+@media screen and (max-width: 900px) {
+  .card {
+    flex-direction: column-reverse;
+  }
+
+  .figures {
+    margin-top: 30px;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .figures .figure:nth-child(2) {
+    margin: 20px 0;
+  }
+
+  .card-info {
+    margin-top: 10px;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .card-image {
+    background-image: url("./images/image-header-mobile.jpg");
+    background-size: cover;
+    height: 230px;
+  }
+
+  .card {
+    width: 300px;
+  }
+  * {
+    text-align: center;
+  }
+}

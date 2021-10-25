@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --more-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  background-color: var(--very-dark-blue);
+}
+
+h1,
+h3 {
+  font-family: "Inter";
+  font-weight: 700;
+  color: white;
+}
+
+p {
+  line-height: 1.5;
+  color: var(--slightly-transparent-white);
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-info > p {
+  margin-top: 20px;
+  font-family: "Inter";
+}
+
+.figures {
+  display: flex;
+  margin-top: 60px;
+}
+
+.figures .figure:nth-child(2) {
+  margin-inline: 50px;
+}
+
+.figures .figure p {
+  font-family: "Lexend Deca";
+  color: var(--more-transparent-white);
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.card-image {
+  background-image: url("./images/image-header-desktop.jpg");
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-image-overlay {
+  background-color: hsl(277, 66%, 35%, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+.purple-text {
+  color: var(--soft-violet);
+}
+
+.card {
+  background-color: var(--dark-desaturated-blue);
+  display: flex;
+}
+
+.card-info {
+  width: 900px;
+  padding: 50px;
+}
+
+.attribution {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  text-align: center;
+  color: white;
+}
